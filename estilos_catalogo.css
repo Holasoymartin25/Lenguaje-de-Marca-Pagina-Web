@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #3C6E47; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background-color: #C4D6B0; 
+    border: 2px solid #3C6E47; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    text-align: center; 
+}
+.nav-bar ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul li a {
+    text-decoration: none; /* Quita el subrayadoo */
+    color: #2F5233; 
+    font-weight: bold; 
+    padding: 5px; 
+    border-radius: 5px;
+}
+.nav-bar ul li a:hover {
+    background-color: #3C6E47;
+    color: white; 
+}
+
+/* Catálogo */
+.catalogo {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Espaciado entre tarjetas */
+    margin: 40px auto; 
+    max-width: 80%; 
+}
+
+.flor {
+    border: 1px solid #3C6E47; 
+    padding: 15px;
+    width: 22%; 
+    text-align: center; 
+    border-radius: 10px; 
+    background: #fff; 
+    transition: transform 0.2s, box-shadow 0.3s; /* Animación despacio */
+}
+.flor:hover {
+    transform: scale(1.05); /* Aumenta el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+.flor img {
+    max-width: 100%; 
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+.add-to-cart {
+    background-color: #3C6E47; 
+    color: white; 
+    border: none; 
+    padding: 10px ; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.add-to-cart:hover {
+    background-color: #2F5233;
+    transform: scale(1.05); 
+}
