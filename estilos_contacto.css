@@ -1,0 +1,90 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #3C6E47; 
+    color: white; 
+    text-align: center;
+    padding: 20px; 
+}
+
+/* Barra de navegacion */
+.nav-bar {
+    background-color: #C4D6B0; 
+    border: 2px solid #3C6E47; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    text-align: center; 
+}
+.nav-bar ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #2F5233; 
+    font-weight: bold; 
+    padding:  15px; 
+    border-radius: 5px;
+}
+.nav-bar ul li a:hover {
+    background-color: #3C6E47; 
+    color: white; 
+}
+
+/* Formulario */
+.formulario-container {
+    background: #f8f8f8; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 2px solid #3C6E47; 
+    max-width: 600px; 
+    margin: 40px auto; 
+}
+.contact-page form {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en na columna */
+}
+.contact-page form label {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #2F5233;
+}
+.contact-page form input, 
+.contact-page form select, 
+.contact-page form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.contact-page form textarea {
+    resize: none; /* quita el redimensionado */
+}
+
+/* Botón de envío */
+.submit-button {
+    background-color: #3C6E47; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 15px; 
+}
+.submit-button:hover {
+    background-color: #2F5233; 
+    transform: scale(1.05); 
+}
