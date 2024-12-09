@@ -1,0 +1,101 @@
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #3C6E47; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background-color: #C4D6B0; 
+    border: 2px solid #3C6E47; 
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 20px auto; 
+    max-width: 80%; 
+    text-align: center; 
+}
+.nav-bar ul {
+    list-style: none; /* Quita los punto de la listas */
+    display: flex; 
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul li a {
+    text-decoration: none; 
+    color: #2F5233; 
+    font-weight: bold; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+.nav-bar ul li a:hover {
+    background-color: #3C6E47; 
+    color: white; 
+}
+
+/* introducción */
+.intro-section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; /* Espaciado entre texto y video */
+    max-width: 80%; 
+    margin: 40px auto;
+}
+.intro-text {
+    max-width: 60%; 
+}
+
+/* Títulos principales */
+.section-title {
+    margin: 40px auto; 
+    text-align: center;
+    color: #3C6E47; 
+    font-size: 30px; 
+}
+
+/* Tabla de flores */
+.styled-table {
+    margin: 20px auto; 
+    border-collapse: collapse;
+    width: 70%; /* Reduce el ancho de la tabla */
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #3C6E47; 
+    padding: 10px; 
+    text-align: center; 
+}
+.styled-table thead {
+    background-color: #9b9191; 
+}
+
+
+.section-flex {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; /* Espaciado entre elementos */
+    max-width: 80%; 
+    margin: 40px auto; 
+}
+.sidebar {
+    max-width: 250px; 
+    background: #f8f8f8; 
+    border: 1px solid #3C6E47; 
+    border-radius: 10px; 
+    padding: 15px; 
+}
+.sidebar h3 {
+    color: #3C6E47; 
+}
