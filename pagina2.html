@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Floristería Bella Flor</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="estilos_catalogo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+</head>
+<body class="catalog-page">
+    <header>
+        <h1>Catálogo de Flores</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="base.html">Inicio</a></li>
+                <li><a href="pagina2.html">Catálogo</a></li>
+                <li><a href="pagina3.html">Contacto</a></li>
+                <li>Carrito <span class="cart-count">0</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nuestras Flores</h2>
+            <img src="img/decoracion_flor.png" alt="Decoración floral" class="float-image">
+            <div class="catalogo">
+                <div class="flor">
+                    <h3>Rosas</h3>
+                    <img src="img/img_rosas.jpeg" alt="Rosas">
+                    <p>2€ por flor</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="flor">
+                    <h3>Margaritas</h3>
+                    <img src="img/margaritas.jpg" alt="Margaritas">
+                    <p>1.5€ por flor</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="flor">
+                    <h3>Girasoles</h3>
+                    <img src="img/girasoles.jpeg" alt="Girasoles">
+                    <p>3€ por flor</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="flor">
+                    <h3>Tulipanes</h3>
+                    <img src="img/tulipanes.jpg" alt="Tulipanes">
+                    <p>2.5€ por flor</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="flor">
+                    <h3>Claveles</h3>
+                    <img src="img/claveles.webp" alt="Claveles">
+                    <p>1.8€ por flor</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Floristería Bella Flor. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function obtenerCarrito() {
+            return parseInt(sessionStorage.getItem('cantidadCarrito')) || 0;
+        }
+
+        function actualizarCarrito() {
+            const cantidad = obtenerCarrito();
+            document.querySelectorAll('.cart-count').forEach(el => el.textContent = cantidad);
+        }
+
+        function agregarProductoAlCarrito() {
+            let cantidad = obtenerCarrito();
+            cantidad++;
+            sessionStorage.setItem('cantidadCarrito', cantidad);
+            actualizarCarrito();
+        }
+
+        actualizarCarrito();
+        document.querySelectorAll('.add-to-cart').forEach(boton => {
+            boton.addEventListener('click', agregarProductoAlCarrito);
+        });
+    </script>
+</body>
+</html>
